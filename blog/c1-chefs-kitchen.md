@@ -12,28 +12,34 @@
 
 
 # Welcome your fear
-#### Or how I learned to fear the things I wasn't even thinking about
+#### Or how to keep your wolf wild
 #### 10/10/14
 
 I'm not ready
-You're right. You aren't ready
+
+You're right. You aren't ready.
 
 I'm not as smart as everyone else in the class.
+
 You're right. Everybody is smarter than you in at least one aspect. Some of them are smarter than you in every aspect.
 
 I don't get the language yet.
+
 No you don't. And you don't even know how much you don't know.
 
 I'm not a quick typist.
+
 Not only that, but you look at the keyboard the entire time.
 
 I don't think I can really devote the time to this right now.
-Then why did you just pay yur tuition? You can't afford NOT to do it now.
+
+Then why did you just pay your tuition? You can't afford NOT to do it now.
 
 I'm socially awkward, I don't know about this peer pairing thing.
-You're right. I can't even keep a conversation going with you. You keep coming back to all these fears you have.
 
-You're fears are valid. They are real. They are palpable. And there are scarier tings you havn't even realized yet. These things shouldn scare you. So be scared.
+You're right. I can't even keep a conversation going with you. You keep talking about all these fears you have.
+
+You're fears are valid. They are real. They are palpable. And there are scarier things you haven't even realized yet. These things should scare you. So be scared.
 
 But what then?
 
@@ -41,13 +47,15 @@ You have a few choices. You can run away from your fears. But you're here now, s
 
 But that's not what we are going for here.
 
-I say, stay scared. Don't get past it, don't ignore it, don't run away. Look the wolf in the eyes, scream and cry a little, and walk right into his jaws.
+I say, stay scared. Don't get past it, don't ignore it, don't run away. Look the wolf in the eyes, let him growl and roar and snap his jaws.
 
-And punch him square in the mouth.
+And poke him in the eye. THEN run.
 
-It'll hurt. And you'll learn that your fear was based on something real. And next time it comes up, you'll still be scared. It's that fear that pushed you to the point you could punch a freaking wolf in the mouth.
+Make sure you pissed him off good. You want that fear chasing you. You've got to use it to make you run faster and farther than you knew you could.
 
-It's when we are pushed to our limits that we grow the most. Fear is what brings us to those limits. And staying in that zone allows us to be better than we ever thought we could be.
+It's when we are pushed to our limits that we grow the most. Fear is what brings us past our limits. And staying in that zone allows us to be better than we ever thought we could be.
+
+Keep the wolf at your back. And when he starts to give up, let him catch up so he's right at your heels again.
 
 Stay mad. Stay hungry. Stay scared.
 
