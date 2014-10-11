@@ -15,7 +15,7 @@
 #### Or What I've learned about development this morning
 #### 10/7/14
 
-Remember that time you had that huge paper due, the one you were working on for 6 months? It was open on your laptop when you took a nap before you submitted the final copy. Remember how you had that cat that was a total jerk? How he'd always just walk all over your keyboard? Remember how you felt when you woke up to find your report was now just 46 pages of wasdjkfhiufvblriwufkjfbiui3q3 vur erkj? And somehow, this furry little bastard had just happened to hit command s. How does that even happen?! Seriously!
+Remember that time you had that huge paper due, the one you were working on for 6 months? It was open on your laptop when you took a nap before you submitted the final copy. Remember how you had that cat that was a total jerk? How he'd always just walk all over your keyboard? Remember how you felt when you woke up to find your report was now just 46 pages of wasdjkfhiufvblriwufkjfbiui3q3 vur erkj? And somehow, this furry little bastard had just happened to hit command s. How does that even happen?! Seriously! You don't have thumbs!
 
 I remember it. I don't remember the next 12 hrs of furious writing and looking for notes and cursing and red rage against tabbies. The mind tends to suppress traumatic memories like that.
 
