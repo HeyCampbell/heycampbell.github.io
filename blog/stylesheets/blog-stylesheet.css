@@ -126,6 +126,7 @@ nav a {
 /*////
 Body
 ////*/
+
 #banner {
   left: 100px;
   /* margin: 0px; */
@@ -209,7 +210,7 @@ margin-left: 60px;
 }
 #content a {
   text-decoration: none;
-  font-size:1.3em;
+  font-size: 1em;
 }
 
 #content img {
