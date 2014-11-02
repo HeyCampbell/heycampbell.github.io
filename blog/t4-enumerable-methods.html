@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600' rel='stylesheet' type='text/css'>
+
+        <link rel="stylesheet" type = "text/css" href="stylesheets/blog-stylesheet.css">
+
+    </head>
+    <body>
+      <header>
+        <nav>
+          <a href="index.html">HOME</a>
+          <a href="index.html">ABOUT</a>
+          <a href="index.html">BLOG</a>
+          <a href="index.html">PORTFOLIO</a>
+        </nav>
+
+      </header>
+      <div id="banner">
+          <div id="squarelogo">
+            <h1>H E Y<br>C A M P<br>B E L L</h1>
+          </div>
+          <div id="awesome">
+            <h3>Make Awesome</h3>
+          </div>
+      </div>
+
+       <div id="content"> <h3>Ruminating and Enumerating</h3>
+        <h5>How I find methods that make me crazy<br>
+            10/31/14</h5>
+       <p>
+        It seems that everytime I get through a weel of banging my head against a wall on one of these challenges, DBC is kind enough to slip a little hint about one of the ways we could solve a problem into the mix. This is incredibly frustrating but also super effective. I get why they do it. I do. But damn, if I had known about this group_by method on Tuesday, I could have saved about 4 hours.
+
+        See, I met up with a couple of my cohorts and we paired on a challenge where we were attempting to find the most common values in an array. We got through that part, where we created a hash that gave us a count of each time a value apeared in an array. We were pretty proud of ourselves. None of us had quite grasped hashes yet. And we had created one, where the frequency was the value and orginal value was the key.
+
+        It was great, a huge milestone when we got that part to work.
+        And we could sort the hash by the largest value, so we got the most frequently used piece of data back at us. Hoorah!
+
+        But wait, what's this next part? Return all of the mode values? But we only know how to get one! We couldn't figure out how to call up the rest of the values. We felt really dumb. And we were all tired and hungry.
+
+        So we started down the path, looking for ways to call a key via it's value. We kept coming up short.
+
+        What we didn't know was that there was a built in Method that could do waht we wanted. Had we come across the <a href="http://www.ruby-doc.org/core-2.1.1/Enumerable.html#method-i-group_by">group_by</a> method in the first part of the exercise, this whole thng would have taken 20 minutes. Instead, we tried several different methods, lines of code posted from Stack Overflow. Nothing did quite what we wanted it to.
+
+        But group_by. Oh man, did group_by deliver. Now I can group my hash pairs by the value, spit out all the keys, and have full access to manipulate this data how I want to.
+
+        Functionally, it works like this. Say we have a hash that looks like this:
+
+        a = {"alpha"=>1, "beta"=>2, "theta"=>2, "zeta"=>3, "omega"=>2}
+
+        we then send that hash the group_by method, telling it to group by the value side of the pairs.
+
+        a.group_by{|k,v| v}
+
+        Here is what we get in return
+
+        {1=>[["alpha", 1]], 2=>[["beta", 2], ["theta", 2], ["omega", 2]], 3=>[["zeta", 3]]}
+
+        And thats what could have saved my mind this week.
+
+        Make Awesome
+
+
+       </p></div>
+       <div id="twitterfeed">
+        Eventually a twitter feed will get placed here.
+        </div>
+        <div id="blognav">
+            <ul>Latest Blog Entries
+                <li><a href="#"></li>
+                <li><a href="#"></li>
+                <li><a href="#"></li>
+                <li><a href="#"></li>
+              </ul>
+
+      </div>
+
+      <div id="footbar"><span>Copyright 2014 - All rights reserved by Jon Campbell</span>
+        <div class="icons">
+          <a class="twitter" href="https://twitter.com/heycampbell"></a>
+          <a class="vimeo" href="https://vimeo.com/heycampbell"></a>
+          <a class="linkedin" href="https://www.linkedin.com/in/heycampbell"></a>
+          <a class="facebook" href="https://www.facebook.com/heycampbell"></a>
+          <a class="email" href="mailto:heycampbell@gmail.com"></a>
+          <a class="github" href="https://github.com/HeyCampbell"></a>
+          <a class="googleplus" href="https://plus.google.com/u/0/+JONCAMPBELLheycampbell/about"></a>
+        </div>
+    </div>
+
+      </div>
+
+
+    </body>
+</html>
