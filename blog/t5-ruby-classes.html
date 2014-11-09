@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600' rel='stylesheet' type='text/css'>
+
+        <link rel="stylesheet" type = "text/css" href="stylesheets/blog-stylesheet.css">
+
+    </head>
+    <body>
+      <header>
+        <nav>
+          <a href="index.html">HOME</a>
+          <a href="index.html">ABOUT</a>
+          <a href="index.html">BLOG</a>
+          <a href="index.html">PORTFOLIO</a>
+        </nav>
+
+      </header>
+      <div id="banner">
+          <div id="squarelogo">
+            <h1>H E Y<br>C A M P<br>B E L L</h1>
+          </div>
+          <div id="awesome">
+            <h3>Make Awesome</h3>
+          </div>
+      </div>
+
+       <div id="content"> <h3>A touch of class</h3>
+        <h5>Sometimes it one little thing that opens up all the possibilities<br>
+            11/8/14</h5>
+       <p>Like a lot of people, I came into this DBC experience with a few ideas in my back pocket. Up until this week, we've mostly been dealing with methods and functions, how they can affect data and moving through basic data structures. Great stuff, everyone should learn these things. But this week, oh son, this week, we learned about about classes.</p>
+
+       <p>I've had this idea for a motorcycle engine inside Ruby. I've been riding a bike for a while, doing most of my own maintenance. So I've done a lot of research into how exactly a motorcycle engine works. I think classes may be the element that makes this thing totally possible.</p>
+
+       <p>A four stroke engine needs 3 basic elements in order to turn over. Air, Fuel, and Spark. When all three are combined in the corect ratios, there is an ignition in the cycinder which drives the crank which turns the chain which rotates the tire which makes me go faster which makes me smile. All of the systems on an engine work together to make the bike move, but the energy starts with the ignition(yes, I know there is an argument for it starting with dinosaurs eating grass, in that argument evrything is solar powered, but stay with me).</p>
+
+       <p>So lets get into classes and how they can make this work. We'll start with the battery. We create a class which will represent a good battery.</p>
+       <code> class Battery<br>
+                attr_accesor :charge<br>
+                def inititalize<br>
+                  @charge = 12.5<br>
+                end<br>
+
+              end<br>
+            </code>
+        <p>You'll notice a couple of things here. First, I've used the attr_accessor on the :charge property. This is so I can both read and write to the charge value from outside the object. This will allow me to simulate a working load on the system. Later on in development, we could model variance in the voltage, possible bad cells, things like that. But for now, this battery is good.</p>
+        <p>Next up lets look at a cylinder class. For the purposes of an MVP, I'm going to create a very simple cylinder cycle.
+        </p>
+        <code> class Cylinder<br>
+                  def initialize<br>
+                  end<br>
+                  def ignition?<br>
+                    battery.charge >= 12 && (11..16).includes?(fuel.air_ratio)<br>
+                  end<br>
+                 end<br>
+               </code>
+<p>Here we've basically just given the cylinder object a method that asks us if there has been an ignition. It takes a good battery and a fuel mixture thats in the right zone and give us an ignition. Simple as a pimple, next step is making that happen on four differnt cylinders with the correct fireing order, implement fuel consumption, time th whole thing to a throttle control, and make it cycle 6,000 per minute. It's obviously going to take a bit more thinking and logic, but thanks to classes, I've got the building blocks I think I'll need to make the first several steps. I've <a href="https://github.com/HeyCampbell/MotoPro">started a repository already</a>, but don't look yet, there isn't anything there. In a few weeks or so I should have something basic put together. Until then...</p>
+
+        <p>Make Awesome</p>
+
+     </div>
+       <div id="twitterfeed">
+        Eventually a twitter feed will get placed here.
+        </div>
+        <div id="blognav">
+            <ul>Latest Blog Entries
+                <li><a href="#"></li>
+                <li><a href="#"></li>
+                <li><a href="#"></li>
+                <li><a href="#"></li>
+              </ul>
+
+      </div>
+
+      <div id="footbar"><span>Copyright 2014 - All rights reserved by Jon Campbell</span>
+        <div class="icons">
+          <a class="twitter" href="https://twitter.com/heycampbell"></a>
+          <a class="vimeo" href="https://vimeo.com/heycampbell"></a>
+          <a class="linkedin" href="https://www.linkedin.com/in/heycampbell"></a>
+          <a class="facebook" href="https://www.facebook.com/heycampbell"></a>
+          <a class="email" href="mailto:heycampbell@gmail.com"></a>
+          <a class="github" href="https://github.com/HeyCampbell"></a>
+          <a class="googleplus" href="https://plus.google.com/u/0/+JONCAMPBELLheycampbell/about"></a>
+        </div>
+    </div>
+
+      </div>
+
+
+    </body>
+</html>
