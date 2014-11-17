@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600' rel='stylesheet' type='text/css'>
+
+        <link rel="stylesheet" type = "text/css" href="stylesheets/blog-stylesheet.css">
+
+    </head>
+    <body>
+      <header>
+        <nav>
+          <a href="index.html">HOME</a>
+          <a href="index.html">ABOUT</a>
+          <a href="index.html">BLOG</a>
+          <a href="index.html">PORTFOLIO</a>
+        </nav>
+
+      </header>
+      <div id="banner">
+          <div id="squarelogo">
+            <h1>H E Y<br>C A M P<br>B E L L</h1>
+          </div>
+          <div id="awesome">
+            <h3>Make Awesome</h3>
+          </div>
+      </div>
+
+       <div id="content"> <h3>Groking Procs and Blocs</h3>
+        <h5>Or Campbell tries to understand things that ryhme<br>
+            11/14/14</h5>
+       <p>Blocks are simple enough. Or so I thought. I had secretly been learning about them for a while now. I didn't know what it was called, I just saw it in some solutions and began to figure out what the wierd looking stuff inside the curly braces did. And it was so cool. suddenly I went from building a full loop with an iterator I'm doing it all in one line. Glorious.</p>
+        <code> array.each {|value_in_array| somemethod(value_in_array)}</code>
+        <p> This sort of thing was popping up left and right. Basically it allows us to go through each value in the array and apply a method to it. You can exptrapolate from there how intricate you can make these things, how many possibilities this opens up to you. But it doesn't work on every method out there. And that just made me sad that I could not build a method that worked with blocks.
+
+      Then I actually read the chapters I'm supposed to read in the books I'm supposed to look at. And suddenyl it all started to blow up. I had been using blocks for the last 2 weeks without having any idea the power behind them. I knew that some methods could work with blocks and some couldn't. Now I know why.
+        <p>The Yield method</p>
+
+        <p>It's pretty simple. This little method allows you to pass values from within an object to a block. Or whatever else it is you want to spit out to, but a block is your best bet. If that is in your method, you can use that method to send data to a block. If not, sorry buddy, no blocks for you.</p>
+
+       <p>Super cool, right? Wouldn't it be great if you could take that block you've just made and plug it in to a variable so you won't have to retype it over and over again? Yeah, thats what a bunch of software engineers figured when they were developing Ruby. So they gave us Procs. This allows us to wrap the block code up into a nice little piece of takeout food and use it wherever we need that block code. Procs take the place of functions in Ruby. Functors are wjhat some people call them. Unlike methods, which are more like pure actions, procs are actually objects. And this being an object oriented language, that can come in really handy.
+       </p>
+       <p>To call a proc, you have a few options. This is Ruby after all, there are one hundred different ways to skin a method. You can call a proc similarly to a block.</p>
+       <code>
+        proc_bar = Proc.new {|value_in_array| somemethod(value_in_array)}
+        foo.each(%proc_bar)<code>
+        <p>Or you can simply just call it. </p>
+        <code>proc_bar.call<code>
+          <p> I know,t hats going to be really hard to remember.</p>
+
+        <p>Your next task, faithful reader, is to understand the difference between lambdas and procs. I'm not so great with it, but basically it boils down to this. When a lambda returns a value within a method, the program flow continues through the rest of the method, leaving the possibility of returning a different value than the lambda returns. A Proc will return the value of the proc, then return control from the method containing the proc. Or something like that. Seriously, I'm just learning this stuff here too. And I have a hard time getting knowledge to fit in my mind when I haven't found a reason to use it yet.</p>
+
+        <p> Got any good reasons to use lambdas? Let me know!</p>
+
+
+
+        <p>Make Awesome</p>
+
+     </div>
+       <div id="twitterfeed">
+        Eventually a twitter feed will get placed here.
+        </div>
+        <div id="blognav">
+            <ul>Latest Blog Entries
+                <li><a href="#"></li>
+                <li><a href="#"></li>
+                <li><a href="#"></li>
+                <li><a href="#"></li>
+              </ul>
+
+      </div>
+
+      <div id="footbar"><span>Copyright 2014 - All rights reserved by Jon Campbell</span>
+        <div class="icons">
+          <a class="twitter" href="https://twitter.com/heycampbell"></a>
+          <a class="vimeo" href="https://vimeo.com/heycampbell"></a>
+          <a class="linkedin" href="https://www.linkedin.com/in/heycampbell"></a>
+          <a class="facebook" href="https://www.facebook.com/heycampbell"></a>
+          <a class="email" href="mailto:heycampbell@gmail.com"></a>
+          <a class="github" href="https://github.com/HeyCampbell"></a>
+          <a class="googleplus" href="https://plus.google.com/u/0/+JONCAMPBELLheycampbell/about"></a>
+        </div>
+    </div>
+
+      </div>
+
+
+    </body>
+</html>
