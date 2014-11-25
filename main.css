@@ -7,7 +7,7 @@ body {
     background-color: slategray;
   background-size: cover;
 
-  margin: 0px;
+  /* margin: 0px; */
   width: 100%;
 }
 
@@ -36,9 +36,9 @@ nav {
   /* width: 100%; */
   font-size: 1em;
   border-radius: 56px;
-  background: slategray;
-  border: solid lightslategrey;
-  box-shadow: 0 2px 21px darkslategrey;
+  /* background: slategray; */
+  /* border: solid lightslategrey; */
+  /* box-shadow: 0 2px 21px darkslategrey; */
 }
 
 nav a{
@@ -51,43 +51,47 @@ nav a{
 /*////
 Body
 ////*/
-#banner {
+#mbanner {
+  text-align: center;
   margin: 0px;
   color:#ffffff;
-  display: inline-block;
-  padding-top: 45px;
-  padding-bottom: 25px;
-  margin-bottom: 10px;
+  display: block;
+  padding-top: 100px;
+  padding-bottom: 240px;
+  /* margin-bottom: 63px; */
   height: 200px;
   position: relative;
   font-size: 25px;
   width:100%;
-  background: url(imgs/treetops.jpg);
-  background-size: cover;
-  box-shadow: 0 8px 21px  darkslategrey;
+  /* background: url(imgs/treetops.jpg); */
+  /* background-size: cover; */
+  /* box-shadow: 0 8px 21px  darkslategrey; */
+  top: 65px;
 }
 
-#squarelogo {
+div#msquarelogo {
   border: 10px;
   border-color: #fff;
   border-style: solid;
   border-radius: 5px;
-  margin-left: 20%;
-  width: 160px;
-  height: 160px;
-  line-height: 190%;
-  text-align: center;
+  margin-left: auto;
+  width: 300px;
+  height: 300px;
+  line-height: 359%;
+  /* text-align: center; */
   padding: 5px;
-  padding-top: 10px;
-  float: left;
-  }
-
-#squarelogo h1 {
-  font-size: 2em;
-  margin: auto;
+  padding-top: 16px;
+  float: center;
+  margin-right: auto;
 }
 
-#awesome {
+#msquarelogo h1 {
+  font-size: 3.5em;
+  margin: auto;
+  clear: both;
+}
+
+#mawesome {
   font-variant: small-caps;
   font-size: 1.5em;
   padding-top:67px;
@@ -97,15 +101,20 @@ Body
 }
 
 #content {
-  text-align: center;
+  text-align: left;
   position: relative;
-  /* top: -10px; */
+  width: 50%;
+  top: 236px;
   margin-right: 11%;
-  margin-left: 11%;
+  margin-left: 16%;
   /* background: firebrick; */
-  /* padding: 30px; */
+  padding: 10px;
   /* border-radius: 5px; */
   color: whitesmoke;
+  border-left: solid;
+  /* border-left-color: whitesmoke; */
+  /* border-left-width: medium; */
+  border-color: whitesmoke;
 }
 
 div#content {}
