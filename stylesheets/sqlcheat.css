@@ -1,0 +1,37 @@
+body {
+  /* width: 106%; */
+  margin: 0 auto;
+  font-family: "Helvetica", sans-serif;
+  text-align: center;
+}
+
+.wordbank {
+  border: 4px solid rgba(74, 74, 74, 0.62);
+ /* display: inline;*/
+
+  text-align:  center;
+}
+
+.wordbank a {
+  text-decoration: none;
+}
+.wordbank ul{
+  display: flex;
+  /* text-align: center; */
+  padding-left: 0;
+}
+.wordbank li {
+  list-style-type: none;
+  padding: 12px;
+  margin: auto;
+}
+.reference {
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  padding-top: 10px;
+}
+
+pre {
+  text-align: left;
+}

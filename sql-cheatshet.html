@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SQL Cheatsheet</title>
+    <link rel="stylesheet" href="stylesheets/sqlcheat.css">
+    <link rel="stylesheet" href="stylesheets/styles/rainbow.css">
+    <script src="scripts/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </head>
+
+  <body>
+
+    <h1>SQL Cheat Sheet</h1>
+
+    <div class="wordbank">
+      <ul>
+        <li><a href="#select">SELECT</a></li>
+        <li><a href="#from">FROM</a></li>
+        <li><a href="#where">WHERE</a></li>
+        <li><a href="#in">IN</a></li>
+        <li><a href="#like">LIKE</a></li>
+        <li><a href="#join">JOIN</a></li>
+        <li><a href="#between">BETWEEN</a></li>
+        <li><a href="#orderby">ORDER BY</a></li>
+        <li><a href="#andor">AND & OR</a></li>
+        <li><a href="#union">UNION</a></li>
+      </ul>
+
+    </div>
+
+    <div class="reference">
+      <div class="reftitle"><a name='select'>SELECT</a> <span> used to select data from a database</span></div>
+      <pre><code>
+SELECT * FROM table_name;
+
+SELECT column_name,column_name
+FROM table_name;
+      </code></pre>
+    </div>
+
+    <div class="reference">
+      <div class="reftitle"><a name='from'>FROM</a> <span> specifies table where data is selected from</span></div>
+      <pre><code>
+SELECT CustomerName,City FROM Customers;
+
+SELECT * FROM table_name;
+      </code></pre>
+    </div>
+
+    <div class="reference">
+      <div class="reftitle"><a name='where'>WHERE</a> <span> extracts those only those records that fulfil a specified criteron</span></div>
+      <pre><code>
+SELECT column_name,column_name
+FROM table_name
+WHERE column_name operator value;
+
+SELECT * FROM Customers
+WHERE Country='Mexico';
+      </code></pre>
+
+    </div>
+
+    <div class="reference">
+      <div class="reftitle"><a name='in'>IN</a> <span> allows you to specify multiple values in a WHERE clause</span></div>
+      <pre><code>
+SELECT column_name(s)
+FROM table_name
+WHERE column_name IN (value1,value2,...);
+
+SELECT * FROM Customers
+WHERE City IN ('Paris','London');
+      </code></pre>
+
+    </div>
+
+    <div class="reference">
+      <div class="reftitle"><a name='like'>LIKE</a> <span> used to search for specified pattern in a column</span></div>
+      <pre><code>
+SELECT column_name(s)
+FROM table_name
+WHERE column_name LIKE pattern;
+
+SELECT * FROM Customers
+WHERE City LIKE 's%';
+      </code></pre>
+    </div>
+
+    <div class="reference">
+      <div class="reftitle"><a name='join'>JOIN</a> <span> used to combine rows from two or more tables based on a common field between them</span></div>
+      <pre><code>
+SELECT Orders.OrderID, Customers.CustomerName, Orders.OrderDate
+FROM Orders
+INNER JOIN Customers
+ON Orders.CustomerID=Customers.CustomerID;
+
+SELECT column_name(s)
+FROM table1
+JOIN table2
+ON table1.column_name=table2.column_name;
+      </code></pre>
+    </div>
+
+    <div class="reference">
+      <div class="reftitle"><a name='between'>BETWEEN</a> <span> selects values within a range of numbers, text or dates</span></div>
+      <pre><code>
+SELECT column_name(s)
+FROM table_name
+WHERE column_name BETWEEN value1 AND value2;
+
+SELECT * FROM Products
+WHERE Price BETWEEN 10 AND 20;
+      </code></pre>
+    </div>
+
+    <div class="reference">
+      <div class="reftitle"><a name='orderby'>ORDER BY</a> <span> used to sort the result set by one or more columns</span></div>
+      <pre><code>
+SELECT column_name,column_name
+FROM table_name
+ORDER BY column_name,column_name ASC|DESC;
+
+SELECT * FROM Customers
+ORDER BY Country;
+      </code></pre>
+    </div>
+
+    <div class="reference">
+      <div class="reftitle"><a name='andor'>AND & OR</a> <span> operators used to filter records based on more than one condition</span></div>
+      <pre><code>
+SELECT * FROM Customers
+WHERE Country='Germany'
+AND City='Berlin';
+
+SELECT * FROM Customers
+WHERE City='Berlin'
+OR City='Munchen';
+      </code></pre>
+    </div>
+
+    <div class="reference">
+      <div class="reftitle"><a name='union'>UNION</a> <span> combines the result of two or more SELECT statements</span></div>
+      <pre><code>
+SELECT column_name(s) FROM table1
+UNION
+SELECT column_name(s) FROM table2;
+
+SELECT City FROM Customers
+UNION
+SELECT City FROM Suppliers
+ORDER BY City;
+      </code></pre>
+    </div>
+
+  </body>
+
+</html>
