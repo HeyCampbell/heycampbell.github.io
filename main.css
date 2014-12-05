@@ -33,12 +33,10 @@ nav {
   text-align: right;
   padding: 10px;
   margin-right: 40px;
-  /* width: 100%; */
+
   font-size: 1em;
   border-radius: 56px;
-  /* background: slategray; */
-  /* border: solid lightslategrey; */
-  /* box-shadow: 0 2px 21px darkslategrey; */
+
 }
 
 nav a{
@@ -58,14 +56,12 @@ Body
   display: block;
   padding-top: 100px;
   padding-bottom: 240px;
-  /* margin-bottom: 63px; */
+
   height: 200px;
   position: relative;
   font-size: 25px;
   width:100%;
-  /* background: url(imgs/treetops.jpg); */
-  /* background-size: cover; */
-  /* box-shadow: 0 8px 21px  darkslategrey; */
+
   top: 65px;
 }
 
@@ -78,7 +74,7 @@ div#msquarelogo {
   width: 300px;
   height: 300px;
   line-height: 359%;
-  /* text-align: center; */
+
   padding: 5px;
   padding-top: 16px;
   float: center;
@@ -110,11 +106,11 @@ div#msquarelogo {
     text-align: center;
 }
 .about_container h3 {
-    /* font-size: 7.75em; */ margin-bottom: 0px; 
-    font-size: 2.5em; 
-    /* border-right: 2px solid; */ 
-    margin-right: 60%; padding-right: 10px; text-align: right; 
-    /* float: left; */ 
+    /* font-size: 7.75em; */ margin-bottom: 0px;
+    font-size: 2.5em;
+    /* border-right: 2px solid; */
+    margin-right: 60%; padding-right: 10px; text-align: right;
+    /* float: left; */
     top: 2em;
     position: relative;
     margin-top: 0;
@@ -126,7 +122,7 @@ div#msquarelogo {
   text-align: left;
   position: relative;
   width: 50%;
-  top: 236px;
+  top: 96px;
   margin-right: 11%;
   margin-left: 16%;
   /* background: firebrick; */
@@ -137,6 +133,7 @@ div#msquarelogo {
   /* border-left-color: whitesmoke; */
   /* border-left-width: medium; */
   border-color: whitesmoke;
+  /* height: 384px; */;
 }
 
 div#content {}
@@ -213,13 +210,373 @@ Footer
 ////*/
 
 div#footbar {
-  background: #f9f9f9;
+  /* background: #f9f9f9; */
   /* top: -16px; */
   width: 100%;
 
   display: inline-block;
   /* box-shadow: 0 -2px 21px darkslategrey; */
+  bottom: 0px;
 }
+/*////////
+General
+/////////*/
+
+/*////////
+Header
+/////////*/
+
+nav {
+  text-align: right;
+  height: 30px;
+  position: fixed;
+  width: 100%;
+  /* background-color: #f9f9f9; */
+  text-decoration: none;
+  top: 0;
+  display:inline;
+}
+
+nav a {
+  text-decoration: none;
+}
+nav#vert_bar{
+  text-align: left;
+  position: absolute;
+  bottom: 10px;
+  z-index: -1;
+}
+header{
+  top:  10px;
+  display: inline;
+  width: 100%;
+
+  margin: auto;
+  position: absolute;
+  top: 35px;
+  /* background-color: #0000ff; */
+}
+
+#squarelogo {
+  border: 10px;
+  border-color: #fff;
+  border-style: solid;
+  border-radius: 5px;
+  margin-left: 20%;
+  width: 50px;
+  height: 50px;
+  line-height: 190%;
+  text-align: center;
+  padding: 5px;
+  padding-top: 10px;
+  float: left;
+  }
+
+#squarelogo h1 {
+  font-size: 1.5em;
+  margin: auto;
+}
+
+#awesome {
+  font-variant: small-caps;
+  font-size: 1.75em;
+  float: left;
+  margin-top: 0px;
+  text-align: left;
+  margin-left: 20px;
+  font-weight: lighter;
+}
+
+
+/*////
+General Defaults
+////*/
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  text-decoration: none;
+  background-color: slategrey;
+  /* background-size: cover; */
+  margin: 0px;
+  width: 100%;
+
+  /* display: inline; */
+  background-image: radial-gradient(ellipse closest-side,rgba(0,0,0,0), rgba(0,0,0,0.6)),url("imgs/liteslatedanger.png"); background-repeat: no-repeat;
+  background-position: center;
+  /* background-position-y: 20px; */
+  background-size: contain;
+}
+
+ .code {
+  background-color: black;
+  text-align: left;
+  color:white;
+  width: 80%;
+  /* text-indent: 20px; */
+  margin-left: 10%;
+}
+
+/*////
+Header
+////*/
+
+header{
+  position: fixed;
+  z-index: 1;
+  display: inline;
+  width: 100%;
+}
+
+nav {
+  /* float:  right; */
+  display: inline;
+  position: fixed;
+  right: 10px;
+  text-align: right;
+  padding: 10px;
+  /* margin-right: 3%; */
+  width: 100%;
+  font-size: 1em;
+  }
+
+nav a {
+  text-decoration: none;
+  color: #e0e0e0;
+  padding-top: 15px;
+  padding-right: 15px;
+  }
+
+/*////
+Body
+////*/
+
+#banner {
+  left: 100px;
+  /* margin: 0px; */
+  color:#ffffff;
+  /* display: inline-block; */
+  padding-top: 20px;
+  padding-bottom: 20px;
+  /* position: relative; */
+  font-size: 25px;
+  width:100%;
+  /* background-image: url("imgs/_1030963.jpg"); */
+  /* background-size: cover; */
+  }
+
+#squarelogo {
+  border: 3px;
+  border-color: #fff;
+  border-style: solid;
+  border-radius: 2px;
+margin-left: 60px;
+  width: 50px;
+  height: 50px;
+  line-height: 1;
+  text-align: center;
+  float: left;
+  }
+
+#squarelogo h1 {
+  font-size: .60em;
+}
+
+#awesome {
+  font-variant: small-caps;
+  font-size: .60em;
+  float: left;
+  margin-top: 1.35em;
+  text-align: left;
+  margin-left: 20px;
+  font-weight: lighter;
+}
+
+#blogbody {
+  /* text-align: center; */
+  color: white;
+  display: inline-block;
+  width: 100%;
+  height: 384px;
+  list-style-type: none;
+  /* background-image: radial-gradient(ellipse closest-side,rgba(0,0,0,0), rgba(0,0,0,0.6)),url("../../imgs/greyDanger.png"); */
+  /* background-repeat: no-repeat; */
+  /* background-position: center; */
+  /* background-position-y: 20px; */
+  /* background-size: contain; */
+  /* height: 300px; */
+  margin: auto;
+  /* padding-right: 200px; */
+}
+
+
+
+#blogbody li {
+  margin-bottom: 20px;
+  list-style-type: none;
+  /* background-color: azure; */
+  font-size: .75em;
+}
+#blogbody span {
+  display: block;
+  padding-bottom:3%;
+  line-height:1em;
+  font-size: 1.45em;
+  font-weight: lighter;
+  /* font-variant: small-caps; */
+}
+#blogbody h3 {
+  /* font-size: 1.75em; */
+  /* margin-bottom: 0px; */
+  /* font-size: 1.3em; */
+  /* border-right: 2px solid; */
+  /* margin-right: 60%; */
+  /* padding-right: 10px; */
+  /* text-align: right; */
+  /* float:  left; */
+  /* top: 1em; */
+}
+
+#blogbody h5 {
+  font-size: 1.25em;
+  margin-top: 0px;
+}
+
+
+#blogbody p {
+  font-size: 1.3em;
+  border-left: 2px solid;
+  margin-left: 40%;
+  padding-left: 10px;
+  -webkit-margin-before: 1em;
+}
+#blogbody a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 1.25em;
+}
+
+#blogbody img {
+  width: 90%;
+  text-align: center;
+}
+
+#Leftcontent{
+  width: 50%;
+  text-align: right;
+  float: left;
+  color: whitesmoke;
+}
+#Rightcontent{
+  width: 48%;
+  text-align:left;
+
+  float:  right;
+  margin-left: 0;
+  /* padding-right: 100px; */
+  /* border: 2px; */
+  border-style: hidden;
+  border-left: double white;
+  height: 90%;
+}
+
+#Rightcontent h2 {
+    margin-left: .25em;
+}
+
+#Rightcontent ul {
+    padding-left: 0;
+    margin-left: .5em;
+}
+#twitterfeed {
+  float: right;
+  position: absolute;
+  width: 30%;
+  margin-right: 2%;
+  margin-left: 2%;
+  background: #f9f9f9;
+  padding: 3%;
+  border-radius: 5px;
+  top: 10px;
+  height: 200px
+}
+
+#sidebar {display: inline;float: right; width: 75%; text-align: right; position: relative; top: 85px;  margin-right: 14%;margin-left: 20%;  padding: 3%; border-radius: 5px;background-color: grey;
+  width: 200px;
+
+height: 200px;}
+#blognav { float: right;
+  position: relative;
+  width: 30%;
+  margin-right: 2%;
+  margin-left: 2%;
+  margin-top: 3%;
+  margin-bottom:4%;
+  background: #f9f9f9;
+  padding: 3%;
+  border-radius: 5px;
+  top: 10px;
+
+}
+
+#blognav ul {
+  font-size: 1em;
+  text-align: left;
+  text-decoration: none;
+  list-style: square;
+}
+
+#blognav li {
+  font-size: 1em;
+  text-decoration: none;
+  font-style:italic;
+
+}
+.bignav {
+  float: center;
+  text-align: center;
+  width: 100%;
+  margin: auto;
+
+}
+.bignav ul {
+  width: 100%;
+  padding: 0px;
+  margin-top: 0;
+  margin-bottom: 0;
+  display: inline;
+}
+.bignav li {
+  margin-left: 4%;
+  margin-right: 4%;
+  margin-top: 3%;
+  margin-bottom: 5%;
+  display: inline-block;
+  float: center;
+  padding: 10px;
+  border: 5px;
+  border-color: #fff;
+  border-style: solid;
+  border-radius: 5px;
+  font-size: 2em;
+  height: 150px;
+  width: 150px;
+  background-color: #9f9
+  }
+
+.bignav a {
+  padding: 10px;
+  color: #f9f9f9;
+  text-decoration: none;
+  margin: auto;
+  position: relative;
+  top: 35%;
+}
+
+
+/*////
+Footer
+////*/
+
+
 
 #footbar span {
   position: relative;
@@ -232,7 +589,6 @@ div#footbar {
 .icons {
   width: 500px;
   margin: 0px;
-
   float: right;
 }
 
